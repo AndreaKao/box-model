@@ -1,0 +1,69 @@
+.first {
+	color: #F8000F;
+}
+
+#winning {
+	color: blue !important;
+}
+/*
+!important cambia la forma de trabajo de la cascada, y puede causar problemas de dificil solución en el depurado de CSS, especialmente en CSS grandes.
+*/
+h1#winning {
+	color: black;
+}
+
+.contenedor {
+	color: pink;
+}
+/* llamo al p siguiente del primero contenido en el div con clase box-three */
+.box-three p:first-of-type + p{
+	font-size: 36px;
+}
+
+/* llamo al último elemento p contenido en el div con clase box-three
+first-child selecciona el primer elemento p */
+.box-three p:last-child {
+	font-size: 6px;
+}
+
+/* Los elementos en bloque por defecto utilizan todo el ancho de la página, en este caso le indicamos un ancho específico de 100pixeles */
+.box-one {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	padding: 20px;
+	border: 5px solid #5A9D69;
+	margin-bottom: 10px;
+}
+
+.box-two {
+	width: 50vw; /* 50vw utiliza el 50% del ancho de la pantalla (es proporcional a cualquier tamaño) */
+	height: 100vh;
+	background-color: blue;
+	padding: 20px;
+	/*
+	visibility: hidden; <-- solo lo esconde pero queda ocupando el espacio y no deja que ningún elemento se posicione ahí
+	display: none; <-- lo esconde y deja el espacio libre para que cualquier elemento lo pueda utilizar
+	*/
+
+	/*
+	Estilo de border:
+	solid
+	dotted
+	dashed
+	double
+	groove
+	ridge
+	inset
+	outset
+
+	border: tipo de borde, tamaño, color;
+	*/
+}
+
+
+
+
+
+
+
